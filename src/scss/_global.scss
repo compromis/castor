@@ -5,18 +5,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
   font-size: 100%;
+  background-color: $background-color;
+  height: 100%;
 }
 
-body:after {
-  content: '';
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  left: 0;
-  right: 0;
-  z-index: -1;
+body {
+  background-color: $background-color;
+  background-image: url(assets/background.jpg);
   background-size: cover;
-  background-position: center 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: $top-nav-height;
+
+  &:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center 50px;
+  }
 }
 
 a {

@@ -1,17 +1,20 @@
 <template>
   <div>
     <top-nav />
+    <intro-block />
   </div>
 </template>
 
 <script>
 import TopNav from './components/TopNav.vue'
+import IntroBlock from './components/IntroBlock.vue'
 
 export default {
   name: 'app',
 
   components: {
-    TopNav
+    TopNav,
+    IntroBlock
   }
 }
 </script>
