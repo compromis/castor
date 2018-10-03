@@ -4,6 +4,8 @@
     <intro-block />
     <what-block />
     <earthquake-block />
+    <fraud-block />
+    <florentino-block />
   </div>
 </template>
 
@@ -12,6 +14,8 @@ import TopNav from './components/TopNav.vue'
 import IntroBlock from './components/blocks/IntroBlock.vue'
 import WhatBlock from './components/blocks/WhatBlock.vue'
 import EarthquakeBlock from './components/blocks/EarthquakeBlock.vue'
+import FraudBlock from './components/blocks/FraudBlock.vue'
+import FlorentinoBlock from './components/blocks/FlorentinoBlock.vue'
 
 export default {
   name: 'app',
@@ -20,7 +24,9 @@ export default {
     TopNav,
     IntroBlock,
     WhatBlock,
-    EarthquakeBlock
+    EarthquakeBlock,
+    FraudBlock,
+    FlorentinoBlock
   }
 }
 </script>
