@@ -1,14 +1,16 @@
 <template>
   <content-block class="earthquake-block">
-    <template slot="header">La terra tremola</template>
+    <template slot="header">
+      <div v-animate.repeat.fade="'shake'">La terra tremola</div>
+    </template>
 
-    <p>
+    <p v-animate.repeat.fade="'shake'">
       En setembre de 2013 es varen produir una seguida de <a href="https://ca.wikipedia.org/wiki/Terratr%C3%A8mols_de_l%27Ebre_de_2013">tremolors de terra</a>
       que varen tindre el seu màxim en el terratrèmol de l'1 d'octubre de 2013, que es va
       sentir en tot el Maestrat i que va arribar a una intensitat de 4,3 en l'escala de
       Richter.
     </p>
-    <p>
+    <p v-animate.repeat.fade="'shake'">
       El Castor va haver de ser paralitzat pel risc que suposava per a la població. Un
       informe de l'Institut Geològic i Miner d'Espanya va determinar que l'activitat del
       Castor era la <a href="http://www.ara.cat/societat/Castor-

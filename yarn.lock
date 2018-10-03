@@ -7084,6 +7084,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-animate-scroll@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/vue-animate-scroll/-/vue-animate-scroll-0.1.3.tgz#f8ded8847293218c66a10f4faf4029493c46c390"
+
 vue-cli-plugin-prerender-spa@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-prerender-spa/-/vue-cli-plugin-prerender-spa-1.0.2.tgz#b82851940e67f7e33cbab7a98e61702bc17cfa77"

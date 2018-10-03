@@ -20,6 +20,58 @@
   }
 }
 
-.shake {
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate {
+  animation-delay: .1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  transition-delay: .1s;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+}
+ 
+.shake.animate-active {
   animation-name: shake;
+}
+
+.slide-up {
+  transform: translateY(50px);
+  opacity: 0;
+}
+ 
+.slide-up.animate-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+}
+ 
+.fade.animate-active {
+  opacity: 1;
+}
+
+.jackInTheBox.animate-active {
+  animation-name: jackInTheBox;
 }

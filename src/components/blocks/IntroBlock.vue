@@ -6,7 +6,7 @@
         <div class="intro-block__container">
           <h1 class="intro-block__header">Castor</h1>
           
-          <p class="intro-block__text-highlight">
+          <p class="intro-block__text-highlight" v-animate="'slide-up'">
             <span>
               Aquesta és una història d'<strong>un dipòsit de gas</strong> en les costes del Maestrat, uns
               terratrèmols i una <strong>indemnització</strong> que hem de pagar-li tots... <strong>a qui els va
@@ -14,7 +14,7 @@
             </span>
           </p>
 
-          <p class="intro-block__text-highlight">
+          <p class="intro-block__text-highlight" v-animate="'slide-up'">
             <span>
               Aquesta és la història del <strong>projecte Castor</strong>. Una història d'una estafa feta a mida
               entre el poder polític del bipartidisme de PP i PSOE i els intocables del gran
@@ -22,7 +22,7 @@
             </span>
           </p>
 
-          <p class="intro-block__text-highlight">
+          <p class="intro-block__text-highlight" v-animate="'slide-up'">
             <span>
               Aquesta és la història de <strong>Florentino Pérez</strong>, amo de l'empresa majoritària de la
               concessió (ACS, amb el 66,67% d'Escal UGS), a qui haurem de pagar quasi
@@ -30,14 +30,14 @@
             </span>
           </p>
 
-          <p class="intro-block__text-highlight">
+          <p class="intro-block__text-highlight" v-animate="'slide-up'">
             <span>
               Aquesta és la història d'una estafa. Sabem què hi guanyava Florentino Pérez,
               ara volem saber <strong>què hi guanyaven PP i PSOE per permetre-ho</strong>.
             </span>
           </p>
 
-          <div class="intro-block__read-more">
+          <div class="intro-block__read-more" v-animate="'slide-up'">
             <a href="" class="button is-large">Continua llegint...</a>
           </div>
         </div>

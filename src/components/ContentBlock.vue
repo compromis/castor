@@ -3,7 +3,7 @@
     <div class="content-block__overlay"></div>
     <div class="container">
       <div class="content-block__container">
-        <h2 class="content-block__title"><slot name="header"></slot></h2>
+        <h2 class="content-block__title" v-animate="'slide-up'"><slot name="header"></slot></h2>
 
         <slot></slot>
       </div>
