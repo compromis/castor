@@ -1,0 +1,40 @@
+html,
+body {
+  font-family: $font-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+  font-size: 100%;
+}
+
+body:after {
+  content: '';
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center 50px;
+}
+
+a {
+  color: $basic-orange;
+
+  &:hover {
+    color: $orange-end;
+  }
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: opacity .5s;
+  height: auto;
+  overflow: hidden;
+}
+
+.slide-enter, .slide-leave-to {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopNav />
+    <top-nav />
   </div>
 </template>
 
@@ -9,6 +9,7 @@ import TopNav from './components/TopNav.vue'
 
 export default {
   name: 'app',
+
   components: {
     TopNav
   }
@@ -16,4 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'scss/variables';
+@import 'scss/fonts';
+@import 'scss/global';
 </style>
