@@ -6,16 +6,10 @@ body {
   color: $text-color;
   font-size: 100%;
   background-color: $background-color;
-  height: 100%;
 }
 
 body {
   background-color: $background-color;
-  background-image: url(assets/background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   padding-top: $top-nav-height;
 
   &:after {
@@ -37,6 +31,14 @@ a {
   &:hover {
     color: $orange-end;
   }
+}
+
+a.button.is-large {
+  background: transparent;
+  border: 2px $white solid;
+  border-radius: 4rem;
+  color: $white;
+  padding: 0.25rem 2rem;
 }
 
 .slide-enter-active, .slide-leave-active {
