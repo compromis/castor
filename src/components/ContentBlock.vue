@@ -52,13 +52,13 @@ export default {
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
     font-weight: bold;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     margin-bottom: 2rem;
   }
 
@@ -73,7 +73,6 @@ export default {
 
 @media (max-width: $mobile-breakpoint) {
   .content-block {
-    border-top: 10px $white solid;
     padding: 0 5rem 0 1rem;
 
     &__container {

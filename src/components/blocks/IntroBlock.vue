@@ -125,10 +125,14 @@ export default {
     text-transform: uppercase;
     text-shadow: 5px 5px 0 $overlay;
     margin-top: 30vh;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
   }
 
   &__text-highlight {
     margin-bottom: 2.5rem;
+    animation-name: fadeInUpDelayed;
+    animation-duration: 2.5s;
 
     span {
       background: $overlay;
