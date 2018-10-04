@@ -149,9 +149,11 @@ export default {
 @media (max-width: $mobile-breakpoint) {
   .intro-block {
     padding: 0 1rem 5rem 1rem;
+    background: linear-gradient($overlay-start 0%, $overlay 30%);
 
     &__header {
-      font-size: 26vw;
+      font-size: 24vw;
+      margin-top: 20vh;
     }
 
     &__text-highlight {
