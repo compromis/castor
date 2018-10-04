@@ -38,7 +38,7 @@
           </p>
 
           <div class="intro-block__read-more" v-animate="'slide-up'">
-            <a href="" class="button is-large">Continua llegint...</a>
+            <a href="#que-es" class="button is-large">Continua llegint...</a>
           </div>
         </div>
       </div>

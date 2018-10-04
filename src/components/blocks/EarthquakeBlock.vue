@@ -1,5 +1,5 @@
 <template>
-  <content-block class="earthquake-block" v-animate.repeat="'shake'">
+  <content-block class="earthquake-block" v-animate.repeat="'shake'" id="terra-tremola">
     <template slot="header">
       <div v-animate.repeat.fade="'shake'">La terra tremola</div>
     </template>
@@ -16,17 +16,20 @@
       Castor era la <a href="http://www.ara.cat/societat/Castor-
       informe-terratremols-Ebre_0_1146485569.html">causa</a> dels terratrèmols.
     </p>
+    <next-arrow to="estafa" text="La estafa"  v-animate.repeat.fade="'shake'" />
   </content-block>
 </template>
 
 <script>
 import ContentBlock from '../ContentBlock.vue'
+import NextArrow from '../buttons/NextArrow.vue'
 
 export default {
   name: 'earthquake-block',
 
   components: {
-    ContentBlock
+    ContentBlock,
+    NextArrow
   }
 }
 </script>

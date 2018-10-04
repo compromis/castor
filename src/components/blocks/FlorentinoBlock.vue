@@ -1,5 +1,5 @@
 <template>
-  <content-block class="florentino-block">
+  <content-block class="florentino-block" id="florentino">
     <template slot="header">Que pague Florentino</template>
 
     <p v-animate="'slide-up'">
@@ -52,12 +52,14 @@
 
 <script>
 import ContentBlock from '../ContentBlock.vue'
+import NextArrow from '../buttons/NextArrow.vue'
 
 export default {
   name: 'florentino-block',
 
   components: {
-    ContentBlock
+    ContentBlock,
+    NextArrow
   }
 }
 </script>

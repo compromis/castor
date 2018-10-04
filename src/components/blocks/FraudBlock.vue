@@ -1,5 +1,5 @@
 <template>
-  <content-block class="fraud-block">
+  <content-block class="fraud-block" id="estafa">
     <template slot="header">La estafa</template>
 
     <p v-animate="'slide-up'">
@@ -30,17 +30,21 @@
       <a href="https://www.lavanguardia.com/economia/20171222/433817722849/castor-
       indemnizacion-constitucional.html">inconstitucional</a>.
     </p>
+
+    <next-arrow to="florentino" text="Que pague Florentino" />
   </content-block>
 </template>
 
 <script>
 import ContentBlock from '../ContentBlock.vue'
+import NextArrow from '../buttons/NextArrow.vue'
 
 export default {
   name: 'fraud-block',
 
   components: {
-    ContentBlock
+    ContentBlock,
+    NextArrow
   }
 }
 </script>

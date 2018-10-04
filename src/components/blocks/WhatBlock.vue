@@ -1,5 +1,5 @@
 <template>
-  <content-block class="what-block">
+  <content-block class="what-block" id="que-es">
     <template slot="header">Què és el Projecte Castor?</template>
 
     <p v-animate="'slide-up'">
@@ -16,17 +16,20 @@
       2012 i es va haver de situar en la costa valenciana perquè la Generalitat de
       Catalunya no va donar-ne permís, a causa del perill que suposava.
     </p>
+    <next-arrow to="terra-tremola" text="La terra tremola" />
   </content-block>
 </template>
 
 <script>
 import ContentBlock from '../ContentBlock.vue'
+import NextArrow from '../buttons/NextArrow.vue'
 
 export default {
   name: 'what-block',
 
   components: {
-    ContentBlock
+    ContentBlock,
+    NextArrow
   }
 }
 </script>

@@ -45,7 +45,7 @@ export default {
     z-index: 10;
     line-height: 1.75;
     max-width: 900px;
-    padding: 5rem 1rem;
+    padding: 10rem 1rem;
     margin: 0 auto;
     text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
@@ -74,6 +74,10 @@ export default {
   .content-block {
     border-top: 10px $white solid;
     padding: 0 1rem;
+
+    &__container {
+      padding: 5rem 1rem;
+    }
 
     &__title {
       line-height: 1.25;
