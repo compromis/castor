@@ -1,5 +1,5 @@
 <template>
-  <content-block class="earthquake-block">
+  <content-block class="earthquake-block" v-animate.repeat="'shake'">
     <template slot="header">
       <div v-animate.repeat.fade="'shake'">La terra tremola</div>
     </template>

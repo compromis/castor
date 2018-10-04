@@ -5,7 +5,7 @@
       <div class="container">
         <div class="intro-block__container">
           <h1 class="intro-block__header">Castor</h1>
-          
+
           <p class="intro-block__text-highlight" v-animate="'slide-up'">
             <span>
               Aquesta és una història d'<strong>un dipòsit de gas</strong> en les costes del Maestrat, uns
@@ -60,7 +60,7 @@ export default {
   methods: {
     handleScroll () {
       this.imageBlurred = (window.scrollY < 1000) ? window.scrollY / 100 : 10
-      const percentage = (window.scrollY > 400) ? 400 : window.scrollY;
+      const percentage = (window.scrollY > 400) ? 400 : window.scrollY
       this.imageScaled = ((percentage * (1.1 - 1) / 400) + 1)
     }
   },
@@ -132,6 +132,25 @@ export default {
 
     strong {
       color: $campaign-color;
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .intro-block {
+    padding: 0 1rem 5rem 1rem;
+
+    &__header {
+      font-size: 26vw;
+    }
+
+    &__text-highlight {
+      font-size: 5vw;
+      width: 80%;
+    }
+
+    &__read-more a {
+      font-size: 1.25rem;
     }
   }
 }

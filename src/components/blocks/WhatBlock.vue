@@ -4,7 +4,7 @@
 
     <p v-animate="'slide-up'">
       En 2008, el Govern de Zapatero aprovava la posada en marxa del Projecte
-      Castor, un <a href="https://www.boe.es/boe/dias/2008/06/05/pdfs/A26051-26052.pdf">dipòsit submarí d'emmagatzemament de gas</a>. 
+      Castor, un <a href="https://www.boe.es/boe/dias/2008/06/05/pdfs/A26051-26052.pdf">dipòsit submarí d'emmagatzemament de gas</a>.
       Des del primer moment, col·lectius ecologistes i de defensa del territori varen alertar
       dels <a href="https://www.elperiodicomediterraneo.com/noticias/comarcas/alertan-castor-
       danara-ultima-zona-virgen-litoral_492680.html">riscos que suposava</a>.

@@ -1,8 +1,6 @@
 <template>
   <content-block class="fraud-block">
-    <template slot="header">
-      <div v-animate="'jackInTheBox'">La estafa</div>
-    </template>
+    <template slot="header">La estafa</template>
 
     <p v-animate="'slide-up'">
       El Projecte Castor és una concessió pública a Escal UGS, de la qual ACS

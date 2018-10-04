@@ -69,4 +69,19 @@ export default {
     }
   }
 }
+
+@media (max-width: $mobile-breakpoint) {
+  .content-block {
+    border-top: 10px $white solid;
+    padding: 0 1rem;
+
+    &__title {
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
 </style>

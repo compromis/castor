@@ -42,7 +42,7 @@
     <p v-animate="'slide-up'">
       Perquè sabem què guanyava Florentino Pérez d'aquest xanxullo d'amiguetes
       com tants d'altres n'hi ha amb el gran poder econòmic que hi està implicat i se'n
-      beneficia. El que falta saber és què guanyaven PP i PSOE per permetre-ho. 
+      beneficia. El que falta saber és què guanyaven PP i PSOE per permetre-ho.
       Perquè la història del Castor l'exemple més clar dels xanxullos entre amiguetes
       del PP i del PSOE. D'un poder polític subordinat als interessos del poder
       econòmic a costa del benestar i dels interessos del poble.
