@@ -32,18 +32,20 @@ export default {
 .side-nav {
   position: fixed;
   top: 50%;
-  right: 30px;
+  right: 0.5rem;
   z-index: 1000;
+  margin-top: -60px;
 
   a {
     display: block;
     position: relative;
     color: $white;
-    height: 30px;
     opacity: 0.5;
     transition: 0.25s ease-in-out;
+    padding: 1rem;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 1;
     }
 
@@ -51,31 +53,34 @@ export default {
       content: '';
       display: block;
       position: absolute;
-      width: 10px;
-      height: 10px;
-      right: 0;
-      top: 5px;
+      width: 0.75rem;
+      height: 0.75rem;
+      right: 1rem;
+      top: 0.7rem;
       border: 1px $white solid;
       border-radius: 5rem;
     }
 
     span {
-      display: none;
-      text-align: right;
-      margin-right: 20px;
+      visibility: hidden;
+      position: absolute;
+      right: 2.5rem;
+      top: 0;
       opacity: 1;
       background: $overlay;
       padding: 0.25rem 0.75rem;
       border-radius: 0.5rem;
+      white-space: nowrap;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       &:after {
         background: $white;
       }
 
       span {
-        display: inline;
+        visibility: visible;
         opacity: 1;
       }
     }

@@ -35,7 +35,8 @@ export default {
     opacity: 0.4;
     transition: 0.25s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 1;
 
       .next-arrow__text {

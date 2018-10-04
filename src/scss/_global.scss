@@ -40,16 +40,15 @@ a.button.is-large {
   border-radius: 4rem;
   color: $white;
   padding: 0.25rem 2rem;
-}
+  transition: 0.25s ease-in-out;
 
-.slide-enter-active, .slide-leave-active {
-  transition: opacity .5s;
-  height: auto;
-  overflow: hidden;
-}
+  &:hover,
+  &:focus {
+    background: $white;
+    color: $overlay;
+  }
 
-.slide-enter, .slide-leave-to {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
+  &:active {
+    transform: translateY(2px);
+  }
 }

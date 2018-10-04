@@ -29,6 +29,7 @@ export default {
   align-items: center;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 
   &__overlay {
     position: absolute;

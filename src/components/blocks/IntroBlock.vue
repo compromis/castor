@@ -1,16 +1,16 @@
 <template>
   <section id="intro">
-    <div 
-      class="intro-block__background" 
-      :style="{ 
-        filter: 'blur(' + imageBlurred + 'px)', 
-        transform: 'scale(' + imageScaled + ')' 
+    <div
+      class="intro-block__background"
+      :style="{
+        filter: 'blur(' + imageBlurred + 'px)',
+        transform: 'scale(' + imageScaled + ')'
       }">
     </div>
     <div class="intro-block">
       <div class="container">
         <div class="intro-block__container">
-          <h1 class="intro-block__header">Castor</h1>
+          <h1 class="intro-block__header" v-animate="'slide-up'">Castor</h1>
 
           <p class="intro-block__text-highlight" v-animate="'slide-up'">
             <span>
