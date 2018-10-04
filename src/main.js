@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueAnimate from 'vue-animate-scroll'
-import Scrollspy from 'vue2-scrollspy'
+import VueScrollactive from 'vue-scrollactive'
 
 Vue.use(VueAnimate)
-Vue.use(Scrollspy)
+Vue.use(VueScrollactive)
 
 Vue.config.productionTip = false
 

@@ -1,23 +1,23 @@
 <template>
-  <nav class="side-nav">
+  <scrollactive class="side-nav" :offset="50" :clickToScroll="false">
     <ul>
       <li>
-          <a href="#intro"><span>Introducció</span></a>
+          <a href="#intro" class="scrollactive-item"><span>Introducció</span></a>
       </li>
       <li>
-          <a href="#que-es"><span>Què és el Castor?</span></a>
+          <a href="#que-es" class="scrollactive-item"><span>Què és el Castor?</span></a>
       </li>
       <li>
-          <a href="#terra-tremola"><span>La terra tremola</span></a>
+          <a href="#terra-tremola" class="scrollactive-item"><span>La terra tremola</span></a>
       </li>
       <li>
-          <a href="#estafa"><span>La estafa</span></a>
+          <a href="#estafa" class="scrollactive-item"><span>La estafa</span></a>
       </li>
       <li>
-          <a href="#florentino"><span>Que pague Florentino</span></a>
+          <a href="#florentino" class="scrollactive-item"><span>Que pague Florentino</span></a>
       </li>
     </ul>
-  </nav>
+  </scrollactive>
 </template>
 
 <script>
@@ -83,6 +83,10 @@ export default {
         visibility: visible;
         opacity: 1;
       }
+    }
+
+    &.is-active:after {
+      background: $white;
     }
   }
 }
