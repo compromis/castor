@@ -1,7 +1,7 @@
 <template>
   <div class="next-arrow">
     <a :href="'#' + to">
-      <ArrowIcon class="next-arrow__svg" /> 
+      <ArrowIcon class="next-arrow__svg" />
       <span class="next-arrow__text">{{ text }}</span>
     </a>
   </div>

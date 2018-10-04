@@ -73,7 +73,7 @@ export default {
 @media (max-width: $mobile-breakpoint) {
   .content-block {
     border-top: 10px $white solid;
-    padding: 0 1rem;
+    padding: 0 5rem 0 1rem;
 
     &__container {
       padding: 5rem 1rem;

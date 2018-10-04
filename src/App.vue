@@ -1,16 +1,22 @@
 <template>
   <div>
-    <top-nav />
-    <intro-block />
-    <what-block />
-    <earthquake-block />
-    <fraud-block />
-    <florentino-block />
+    <header>
+      <top-nav />
+      <side-nav />
+    </header>
+    <main>
+      <intro-block />
+      <what-block />
+      <earthquake-block />
+      <fraud-block />
+      <florentino-block />
+    </main>
   </div>
 </template>
 
 <script>
 import TopNav from './components/TopNav.vue'
+import SideNav from './components/SideNav.vue'
 import IntroBlock from './components/blocks/IntroBlock.vue'
 import WhatBlock from './components/blocks/WhatBlock.vue'
 import EarthquakeBlock from './components/blocks/EarthquakeBlock.vue'
@@ -23,6 +29,7 @@ export default {
   components: {
     TopNav,
     IntroBlock,
+    SideNav,
     WhatBlock,
     EarthquakeBlock,
     FraudBlock,

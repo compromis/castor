@@ -62,16 +62,4 @@ export default {
   font-size: 1.25rem;
   margin: 0 auto 0 20px;
 }
-
-@keyframes HeaderOrange {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 </style>
