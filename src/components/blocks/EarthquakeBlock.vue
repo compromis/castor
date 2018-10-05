@@ -47,11 +47,13 @@ export default {
   &__background {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: -20px;
+    right: -20px;
     bottom: 0;
     background-image: url(https://images.unsplash.com/photo-1514747975201-4715db583da9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=68a7acc60c0f1408fd0fab08d2ca5071&auto=format&fit=crop&w=2850&q=80);
-    transform: scale(1.25);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
 }
 </style>
