@@ -11,6 +11,7 @@
       <fraud-block />
       <florentino-block />
     </main>
+    <page-footer />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import WhatBlock from './components/blocks/WhatBlock.vue'
 import EarthquakeBlock from './components/blocks/EarthquakeBlock.vue'
 import FraudBlock from './components/blocks/FraudBlock.vue'
 import FlorentinoBlock from './components/blocks/FlorentinoBlock.vue'
+import PageFooter from './components/PageFooter.vue'
 
 export default {
   name: 'app',
@@ -33,7 +35,8 @@ export default {
     WhatBlock,
     EarthquakeBlock,
     FraudBlock,
-    FlorentinoBlock
+    FlorentinoBlock,
+    PageFooter
   }
 }
 </script>
