@@ -1,6 +1,6 @@
 <template>
   <div class="next-arrow">
-    <a :href="'#' + to" v-smooth-scroll>
+    <a :href="'#' + to" v-smooth-scroll="{ offset: -50 }">
       <ArrowIcon class="next-arrow__svg" />
       <span class="next-arrow__text">{{ text }}</span>
     </a>

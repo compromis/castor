@@ -1,5 +1,5 @@
 <template>
-  <scrollactive class="side-nav">
+  <scrollactive class="side-nav" :offset="50">
     <ul>
       <li>
           <a href="#intro" class="scrollactive-item"><span>Introducció</span></a>

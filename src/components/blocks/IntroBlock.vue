@@ -44,7 +44,7 @@
           </p>
 
           <div class="intro-block__read-more" v-animate="'slide-up'">
-            <a href="#que-es" class="button is-large">Continua llegint...</a>
+            <a href="#que-es" class="button is-large" v-smooth-scroll="{ offset: -50 }">Continua llegint...</a>
           </div>
         </div>
       </div>
@@ -66,8 +66,8 @@ export default {
   methods: {
     handleScroll () {
       this.imageBlurred = (window.scrollY < 1000) ? window.scrollY / 100 : 10
-      const percentage = (window.scrollY > 400) ? 400 : window.scrollY
-      this.imageScaled = ((percentage * (1.1 - 1) / 400) + 1)
+      const percentage = (window.scrollY > 500) ? 500 : window.scrollY
+      this.imageScaled = ((percentage * (0.15) / 500) + 1)
     }
   },
 

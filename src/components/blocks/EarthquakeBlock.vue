@@ -1,7 +1,11 @@
 <template>
-  <content-block class="earthquake-block" v-animate.repeat="'shake'" id="terra-tremola">
+  <content-block class="earthquake-block" id="terra-tremola">
     <template slot="header">
       <div v-animate.repeat.fade="'shake'">La terra tremola</div>
+    </template>
+
+    <template slot="custom-background">
+      <div class="earthquake-block__background" v-animate.repeat="'shake'"></div>
     </template>
 
     <p v-animate.repeat.fade="'shake'">
@@ -38,6 +42,16 @@ export default {
 @import '../../scss/variables';
 
 .earthquake-block {
-  background-image: url(https://images.unsplash.com/photo-1514747975201-4715db583da9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=68a7acc60c0f1408fd0fab08d2ca5071&auto=format&fit=crop&w=2850&q=80);
+  overflow: hidden;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://images.unsplash.com/photo-1514747975201-4715db583da9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=68a7acc60c0f1408fd0fab08d2ca5071&auto=format&fit=crop&w=2850&q=80);
+    transform: scale(1.25);
+  }
 }
 </style>

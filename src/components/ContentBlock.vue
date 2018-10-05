@@ -1,6 +1,7 @@
 <template>
   <section class="content-block">
     <div class="content-block__overlay"></div>
+    <slot name="custom-background"></slot>
     <div class="container">
       <div class="content-block__container">
         <h2 class="content-block__title" v-animate="'slide-up'"><slot name="header"></slot></h2>
