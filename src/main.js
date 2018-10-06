@@ -3,9 +3,10 @@ import VueI18n from 'vue-i18n'
 import VueAnimate from 'vue-animate-scroll'
 import VueScrollactive from 'vue-scrollactive'
 import VueSmoothScroll from 'vue2-smooth-scroll'
+
 import App from './App.vue'
 
-import Valencian from './lang/va.js'
+import Valencian from './lang/ca.js'
 import Spanish from './lang/es.js'
 
 Vue.use(VueI18n)
@@ -15,14 +16,12 @@ Vue.use(VueSmoothScroll)
 
 Vue.config.productionTip = false
 
-const messages = {
-  va: Valencian,
-  es: Spanish
-}
-
 const i18n = new VueI18n({
-  locale: 'va',
-  messages
+  locale: 'ca',
+  messages: {
+    ca: Valencian,
+    es: Spanish
+  }
 })
 
 new Vue({

@@ -1,11 +1,11 @@
 <template>
   <div class="language-switcher tabs is-toggle">
     <ul>
-      <li :class="{ 'is-active': $i18n.locale == 'va' }">
-        <a href="#" @click.prevent="$i18n.locale = 'va'">Valencià</a>
+      <li :class="{ 'is-active': $i18n.locale == 'ca' }">
+        <a href="#" @click.prevent="switchLanguage('ca')">Valencià</a>
       </li>
       <li :class="{ 'is-active': $i18n.locale == 'es' }">
-        <a href="#" @click.prevent="$i18n.locale = 'es'">Castellano</a>
+        <a href="#" @click.prevent="switchLanguage('es')">Castellano</a>
       </li>
     </ul>
   </div>
@@ -13,7 +13,14 @@
 
 <script>
 export default {
-  name: 'language-switcher'
+  name: 'language-switcher',
+
+  methods: {
+    switchLanguage (lang) {
+      this.$i18n.locale = lang
+      document.documentElement.lang = lang
+    }
+  }
 }
 </script>
 
