@@ -59,24 +59,38 @@ export default {
   data () {
     return {
       imageBlurred: 0,
-      imageScaled: 1
+      imageScaled: 1,
+      lastScrollY: 0,
+      ticking: false
     }
   },
 
   methods: {
-    handleScroll () {
-      this.imageBlurred = (window.scrollY < 1000) ? window.scrollY / 100 : 10
-      const percentage = (window.scrollY > 500) ? 500 : window.scrollY
+    blurHeroImage () {
+      this.imageBlurred = (this.lastScrollY < 1000) ? this.lastScrollY / 100 : 10
+      const percentage = (this.lastScrollY > 500) ? 500 : this.lastScrollY
       this.imageScaled = ((percentage * (0.15) / 500) + 1)
+      this.ticking = false
+    },
+
+    requestTick () {
+      if (!this.ticking) {
+        window.requestAnimationFrame(this.blurHeroImage)
+      }
+    },
+
+    onScroll () {
+      this.lastScrollY = window.scrollY
+      this.requestTick()
     }
   },
 
   created () {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('scroll', this.onScroll)
   },
 
   destroyed () {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.onScroll)
   }
 }
 </script>

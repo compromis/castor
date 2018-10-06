@@ -1,7 +1,7 @@
 <template>
   <content-block class="earthquake-block" id="terra-tremola">
     <template slot="header">
-      <div v-animate.repeat.fade="'shake'">La terra tremola</div>
+      <div class="earthquake-block__header" v-animate.repeat.fade="'shake'">La terra tremola</div>
     </template>
 
     <template slot="custom-background">
@@ -54,6 +54,12 @@ export default {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    will-change: transform;
+  }
+
+  &__header,
+  p {
+    will-change: transform;
   }
 }
 </style>
