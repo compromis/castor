@@ -1,17 +1,17 @@
 <template>
-  <header class="top-header is-fixed-top">
-    <div class="top-header-brand">
+  <nav class="top-nav is-fixed-top">
+    <div class="top-nav__brand">
       <a href="https://compromis.net">
         <img src="https://compromis.net/wp-content/themes/Compromis/images/logo-compromis-retina.png" alt="Compromís" />
       </a>
     </div>
 
-    <div class="top-header-band-title">
+    <div class="top-nav__title">
       Castor
     </div>
 
     <SocialButtons />
-  </header>
+  </nav>
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
 <style scoped lang="scss">
 @import '../scss/variables';
 
-.top-header {
+.top-nav {
   display: flex;
   position: fixed;
   z-index: 10000;
@@ -41,25 +41,25 @@ export default {
   background-size: 200% 100%;
   animation: HeaderOrange 15s ease infinite;
   box-shadow: 0 1px 100px -10px rgba(0, 0, 0, 0.6);
-}
 
-.top-header-brand {
-  background: #fff;
-  padding: 0.5rem 1.5rem;
-  flex-shrink: 0;
+  &__brand {
+    background: #fff;
+    padding: 0.5rem 1.5rem;
+    flex-shrink: 0;
 
-  img {
-    width: 160px;
-    margin-bottom: -0.5rem;
+    img {
+      width: 160px;
+      margin-bottom: -0.5rem;
+    }
   }
-}
 
-.top-header-band-title {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  color: #fff;
-  font-size: 1.25rem;
-  margin: 0 auto 0 20px;
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 0 auto 0 20px;
+  }
 }
 </style>
