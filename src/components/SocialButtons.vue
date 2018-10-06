@@ -14,7 +14,7 @@
           </iframe>
         </p>
         <p class="control">
-          <iframe 
+          <iframe
             :src="'https://platform.twitter.com/widgets/tweet_button.html?size=l&url=' + encodeURIComponent(shareUrl) + '&via=' + twitterAccount + '&related=' + twitterAccount + '&text=' + encodeURIComponent(tweet) + '&lang=' + $t('global.twLocale')"
             class="header__social-plugins__twitter"
             width="140"
@@ -37,7 +37,8 @@ export default {
     return {
       shareUrl: 'https://compromis.net/castor',
       fbApp: '252515324782640',
-      tweet: 'Castor'
+      tweet: 'Castor',
+      twitterAccount: 'compromis'
     }
   }
 }
