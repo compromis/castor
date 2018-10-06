@@ -3,27 +3,27 @@
     <ul>
       <li>
           <a href="#intro" class="scrollactive-item" @click="focusTarget">
-            <span>Introducció</span>
+            <span>{{ $t('sections.introduction') }}</span>
           </a>
       </li>
       <li>
           <a href="#que-es" class="scrollactive-item" @click="focusTarget">
-            <span>Què és el Castor?</span>
+            <span>{{ $t('sections.whatisit') }}</span>
           </a>
       </li>
       <li>
           <a href="#terra-tremola" class="scrollactive-item" @click="focusTarget">
-            <span>La terra tremola</span>
+            <span>{{ $t('sections.earthquake') }}</span>
           </a>
       </li>
       <li>
           <a href="#estafa" class="scrollactive-item" @click="focusTarget">
-            <span>La estafa</span>
+            <span>{{ $t('sections.fraud') }}</span>
           </a>
       </li>
       <li>
           <a href="#florentino" class="scrollactive-item" @click="focusTarget">
-            <span>Que pague Florentino</span>
+            <span>{{ $t('sections.florentino') }}</span>
           </a>
       </li>
     </ul>

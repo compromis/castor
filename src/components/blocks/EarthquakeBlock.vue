@@ -20,7 +20,9 @@
       Castor era la <a href="http://www.ara.cat/societat/Castor-
       informe-terratremols-Ebre_0_1146485569.html">causa</a> dels terratrèmols.
     </p>
-    <next-arrow to="estafa" text="La estafa"  v-animate.repeat.fade="'shake'" />
+    <next-arrow to="estafa" v-animate.repeat.fade="'shake'">
+      {{ $t('sections.fraud') }}
+    </next-arrow>
   </content-block>
 </template>
 

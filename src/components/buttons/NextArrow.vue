@@ -2,7 +2,7 @@
   <div class="next-arrow">
     <a :href="'#' + to" v-smooth-scroll="{ offset: -50 }">
       <ArrowIcon class="next-arrow__svg" />
-      <span class="next-arrow__text">{{ text }}</span>
+      <span class="next-arrow__text"><slot></slot></span>
     </a>
   </div>
 </template>
@@ -18,8 +18,7 @@ export default {
   },
 
   props: {
-    to: String,
-    text: String
+    to: String
   }
 }
 </script>

@@ -11,17 +11,20 @@
     </div>
 
     <SocialButtons />
+    <LanguageSwitcher />
   </header>
 </template>
 
 <script>
 import SocialButtons from './SocialButtons.vue'
+import LanguageSwitcher from './LanguageSwitcher.vue'
 
 export default {
   name: 'top-nav',
 
   components: {
-    SocialButtons
+    SocialButtons,
+    LanguageSwitcher
   }
 }
 </script>

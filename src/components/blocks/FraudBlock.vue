@@ -31,7 +31,9 @@
       indemnizacion-constitucional.html">inconstitucional</a>.
     </p>
 
-    <next-arrow to="florentino" text="Que pague Florentino" />
+    <next-arrow to="florentino" v-animate="'slide-up'">
+      {{ $t('sections.florentino') }}
+    </next-arrow>
   </content-block>
 </template>
 

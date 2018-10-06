@@ -16,7 +16,9 @@
       2012 i es va haver de situar en la costa valenciana perquè la Generalitat de
       Catalunya no va donar-ne permís, a causa del perill que suposava.
     </p>
-    <next-arrow to="terra-tremola" text="La terra tremola" />
+    <next-arrow to="terra-tremola" v-animate="'slide-up'">
+      {{ $t('sections.earthquake') }}
+    </next-arrow>
   </content-block>
 </template>
 

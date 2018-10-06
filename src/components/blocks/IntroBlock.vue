@@ -43,9 +43,9 @@
             </span>
           </p>
 
-          <div class="intro-block__read-more" v-animate="'slide-up'">
-            <a href="#que-es" class="button is-large" v-smooth-scroll="{ offset: -50 }">Continua llegint...</a>
-          </div>
+          <next-arrow to="que-es" v-animate="'slide-up'">
+            {{ $t('sections.whatisit') }}
+          </next-arrow>
         </div>
       </div>
     </div>
@@ -53,8 +53,14 @@
 </template>
 
 <script>
+import NextArrow from '../buttons/NextArrow.vue'
+
 export default {
   name: 'intro-block',
+
+  components: {
+    NextArrow
+  },
 
   data () {
     return {
@@ -77,6 +83,8 @@ export default {
       if (!this.ticking) {
         window.requestAnimationFrame(this.blurHeroImage)
       }
+
+      this.ticking = true
     },
 
     onScroll () {
