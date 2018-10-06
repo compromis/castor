@@ -11,7 +11,7 @@
       <div class="footer__social-plugins">
         <div class="footer__social-plugins__wrapper">
           <iframe
-            src="https://platform.twitter.com/widgets/follow_button.html?screen_name=compromis&show_screen_name=true&show_count=true&size=l&lang=es"
+            :src="'https://platform.twitter.com/widgets/follow_button.html?screen_name=compromis&show_screen_name=true&show_count=true&size=l&lang=' + $t('global.twLocale')"
             class="footer__social-plugins__twitter"
             width="200"
             height="37">
@@ -19,7 +19,7 @@
         </div>
         <div class="footer__social-plugins__wrapper">
           <iframe
-            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fcoaliciocompromis&width=450&layout=standard&action=like&size=large&show_faces=true&colorscheme=dark&share=true&height=80&appId=252515324782640&locale=ca_ES"
+            :src="'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fcoaliciocompromis&width=450&layout=standard&action=like&size=large&show_faces=true&colorscheme=dark&share=true&height=80&appId=252515324782640&locale=' + $t('global.fbLocale')"
             class="footer__social-plugins__facebook"
             width="450"
             height="65"
@@ -38,7 +38,7 @@
       </i18n>
 
       <p>
-        <a href="mailto:info@compromis.net">info@compromis.net</a> 
+        <a href="mailto:info@compromis.net">info@compromis.net</a>
         | 96 382 66 06 | Plaça del Pilar, 1 - 46001 València
       </p>
 

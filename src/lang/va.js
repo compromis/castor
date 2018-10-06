@@ -1,4 +1,9 @@
 export default {
+  global: {
+    fbLocale: 'ca_ES',
+    twLocale: 'ca'
+  },
+
   sections: {
     introduction: 'Introducció',
     whatisit: 'Què és el Castor?',

@@ -12,6 +12,10 @@
         <div class="intro-block__container">
           <h1 class="intro-block__header" v-animate="'slide-up'">Castor</h1>
 
+          <div v-animate="'slide-up'" class="intro-block__language">
+            <language-switcher />
+          </div>
+
           <p class="intro-block__text-highlight" v-animate="'slide-up'">
             <span>
               Aquesta és una història d'<strong>un dipòsit de gas</strong> en les costes del Maestrat, uns
@@ -53,12 +57,14 @@
 </template>
 
 <script>
+import LanguageSwitcher from '../LanguageSwitcher.vue'
 import NextArrow from '../buttons/NextArrow.vue'
 
 export default {
   name: 'intro-block',
 
   components: {
+    LanguageSwitcher,
     NextArrow
   },
 
@@ -149,6 +155,12 @@ export default {
     margin-top: 30vh;
     animation-name: fadeInUp;
     animation-duration: 1.5s;
+  }
+
+  &__language {
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    margin: -1rem 0 2rem 0;
   }
 
   &__text-highlight {
