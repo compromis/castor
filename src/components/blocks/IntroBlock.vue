@@ -94,6 +94,7 @@ export default {
     },
 
     onScroll () {
+      if (window.scrollY > 1000) return
       this.lastScrollY = window.scrollY
       this.requestTick()
     }
