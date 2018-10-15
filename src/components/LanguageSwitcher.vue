@@ -29,7 +29,7 @@ export default {
 
 .language-switcher {
   a {
-    background: rgba(12, 21, 31, 0.5);
+    background: $button-background;
     color: $white;
     padding: 0.25rem 1rem;
 

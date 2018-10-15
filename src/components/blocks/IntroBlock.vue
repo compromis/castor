@@ -12,8 +12,15 @@
         <div class="intro-block__container">
           <h1 class="intro-block__header" v-animate="'slide-up'">Castor</h1>
 
-          <div v-animate="'slide-up'" class="intro-block__language">
-            <language-switcher />
+          <div v-animate="'slide-up'" class="intro-block__language columns">
+            <div class="column">
+              <language-switcher />
+            </div>
+            <div class="column has-text-right">
+              <a href="#video" class="intro-block__button button is-outlined is-rounded" v-smooth-scroll="{ offset: -100 }">
+                <PlayIcon /> Vídeo
+              </a>
+            </div>
           </div>
 
           <p class="intro-block__text-highlight" v-animate="'slide-up'">
@@ -47,6 +54,20 @@
             </span>
           </p>
 
+          <div id="video" class="intro-block__video">
+            <iframe
+              v-if="shouldPlayVideo"
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcoaliciocompromis%2Fvideos%2F1932604230102806%2F&show_text=0&width=476&autoplay=true"
+              width="476"
+              height="476"
+              style="border:none;overflow:hidden"
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+              allowFullScreen="true">
+            </iframe>
+          </div>
+
           <next-arrow to="que-es" v-animate="'slide-up'">
             {{ $t('sections.whatisit') }}
           </next-arrow>
@@ -59,13 +80,15 @@
 <script>
 import LanguageSwitcher from '../LanguageSwitcher.vue'
 import NextArrow from '../buttons/NextArrow.vue'
+import PlayIcon from '../../assets/play.svg'
 
 export default {
   name: 'intro-block',
 
   components: {
     LanguageSwitcher,
-    NextArrow
+    NextArrow,
+    PlayIcon
   },
 
   data () {
@@ -73,16 +96,23 @@ export default {
       imageBlurred: 0,
       imageScaled: 1,
       lastScrollY: 0,
-      ticking: false
+      ticking: false,
+      shouldPlayVideo: false
     }
   },
 
   methods: {
     blurHeroImage () {
+      if (window.scrollY > 1000) return
       this.imageBlurred = (this.lastScrollY < 1000) ? this.lastScrollY / 100 : 10
       const percentage = (this.lastScrollY > 500) ? 500 : this.lastScrollY
       this.imageScaled = ((percentage * (0.15) / 500) + 1)
       this.ticking = false
+    },
+
+    handleVideoAutoplay () {
+      const videoPos = document.getElementById('video').offsetTop - (window.innerHeight + 100)
+      if(this.lastScrollY > videoPos) this.shouldPlayVideo = true
     },
 
     requestTick () {
@@ -94,9 +124,9 @@ export default {
     },
 
     onScroll () {
-      if (window.scrollY > 1000) return
       this.lastScrollY = window.scrollY
       this.requestTick()
+      this.handleVideoAutoplay();
     }
   },
 
@@ -177,6 +207,49 @@ export default {
 
     strong {
       color: $campaign-color;
+    }
+  }
+
+  &__video {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    &::before {
+      display: block;
+      content: "";
+      padding-top: 100%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  &__button {
+    background: $button-background;
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      background: $campaign-color;
+      color: $text-color-dark;
+      border-color: $campaign-color;
+
+      svg {
+        filter: invert(100%);
+      }
+    }
+
+    svg {
+      width: 20px;
+      margin-right: 0.75rem;
     }
   }
 }
