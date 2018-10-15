@@ -112,7 +112,7 @@ export default {
 
     handleVideoAutoplay () {
       const videoPos = document.getElementById('video').offsetTop - (window.innerHeight + 100)
-      if(this.lastScrollY > videoPos) this.shouldPlayVideo = true
+      if (this.lastScrollY > videoPos) this.shouldPlayVideo = true
     },
 
     requestTick () {
@@ -126,7 +126,7 @@ export default {
     onScroll () {
       this.lastScrollY = window.scrollY
       this.requestTick()
-      this.handleVideoAutoplay();
+      this.handleVideoAutoplay()
     }
   },
 
